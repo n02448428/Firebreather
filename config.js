@@ -1,0 +1,46 @@
+export var COLORS = {
+    background: 0x1a0f26,
+    ground: 0x302040,
+    fireCore: 0xFFFFE0,
+    fireMid: 0xFF8C00,
+    fireEdge: 0x8B0000,
+    // ice: 0x42A5F5, // Original bright blue - keeping for reference, but color is now darkened in enemy.js
+    ice: 0x3582c4,
+    iceHSL: {
+        h: 0.575,
+        s: 0.7,
+        l: 0.49
+    } // Adjusted HSL for the new darker base: #3582C4
+};
+export var GAME_CONFIG = {
+    PLAYER_HEIGHT: 1.6,
+    PLAYER_HIT_RADIUS: 50,
+    MOUTH_OPEN_THRESHOLD: 0.35,
+    FIRE_PARTICLE_SIZE: 40,
+    FIRE_PARTICLE_SPEED: 550,
+    FIRE_PARTICLE_LIFETIME: 1.1,
+    FIRE_EMIT_COOLDOWN: 0.03,
+    FIRE_DAMAGE_PER_PARTICLE: 35,
+    ENEMY_MIN_SIZE: 35,
+    ENEMY_MAX_SIZE: 80,
+    ENEMY_INITIAL_HEALTH: 100,
+    ENEMY_MIN_SPEED: 50,
+    ENEMY_MAX_SPEED: 120,
+    ENEMY_SPAWN_INTERVAL_INITIAL: 2.0,
+    ENEMY_SPAWN_INTERVAL_MIN: 0.4,
+    ENEMY_SPAWN_INTERVAL_RAMP_FACTOR: 0.99,
+    ENEMY_SPAWN_DISTANCE: 0,
+    POINTS_PER_ENEMY: 10,
+    // Progressive Difficulty
+    ENEMY_SCALE_RAMP_PER_SECOND: 0.005,
+    ENEMY_MAX_SCALE_MULTIPLIER: 2.5,
+    ENEMY_HEALTH_RAMP_PER_SECOND: 0.01,
+    ENEMY_MAX_HEALTH_MULTIPLIER: 3.0,
+    NEUTRAL_RAW_DY: -0.35,
+    AIM_SMOOTHING_FACTOR: 0.4,
+    AIM_SENSITIVITY_MULTIPLIER_X: 1.5,
+    AIM_SENSITIVITY_MULTIPLIER_Y: 2.5,
+    AIM_ASSIST_OFFSET_X: 0.015,
+    AIM_ASSIST_OFFSET_Y: 0.025,
+    MAX_DELTA_TIME: 0.1
+};
